@@ -3,6 +3,10 @@ title: "AMME Formula Guide"
 author: "Nidula Foneka"
 date: "03/09/2020"
 output:
+  word_document:
+    toc: yes
+  pdf_document:
+    toc: yes
   html_document:
     number_sections: yes
     self_contained: yes
@@ -11,8 +15,6 @@ output:
     toc: yes
     toc_float: yes
     code_folding: hide
-  pdf_document:
-    toc: yes
 ---
 # Stress
 ## Tensile Stress
