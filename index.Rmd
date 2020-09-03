@@ -1,0 +1,84 @@
+---
+title: "AMME Formula/Data Guide"
+author: "Nidula Foneka"
+date: "03/09/2020"
+output:
+  html_document:
+    number_sections: yes
+    self_contained: yes
+    theme: flatly
+    css: https://use.fontawesome.com/releases/v5.0.6/css/all.css
+    toc: yes
+    toc_float: yes
+    code_folding: hide
+  pdf_document:
+    toc: yes
+---
+# Stress
+## Tensile Stress
+$$\sigma = \frac{F_t}{A_o}$$ 
+In Pa or $N/m^2$ where $F_t$ is the Force applied perpendicular to the Plane of $A$
+
+## Shear Stress
+$$\tau = \frac{F_s}{A_o}$$ 
+In Pa or $N/m^2$ where $F_s$ is the Force applied parallel to the plane of $A$
+
+# Strain
+## Tensile Strain
+
+$$\varepsilon = \frac{\delta}{L_o}$$
+where $\delta$ is the change in Length and $L_o$ is the Original Length
+
+## Lateral Strain
+$$\varepsilon_L = \frac{-\delta_L}{W_o}$$
+where $\delta_L$ is the change in Width and $W_o$ is the Original Width
+
+## Shear Strain
+$$\gamma = \frac{\Delta x}{y} = \tan\theta$$
+
+# Stress/Strain
+## Hooke's Law (Young's Modulus)
+$$\sigma = E\varepsilon$$
+$$E = \frac{\sigma}{\varepsilon}$$
+Where $E$ is Young's Modulus usually measured in GPa
+
+## Poisson's Ratio
+$$\nu = -\frac{\varepsilon_L}{\varepsilon}$$
+
+### Data
+
+| Material | $\nu$ |
+|----------|-------|
+| Metals   | ~0.33 |
+| Ceramics | ~0.25 |
+| Polymers | ~0.40 |
+
+
+## Shear Modulus
+$$\tau = G\gamma$$
+$$G = \frac{\tau}{\gamma}$$
+Where $G$ is the Shear modulus.
+
+## Relationship for Isotropic Materials
+$$G = \frac{E}{2(1+\nu)}$$
+
+
+## Ductility
+
+$$\%EL = \frac{L_f-L_o}{L_o}×100$$
+Also $\%RA = \frac{A_o-A_f}{A_o}×100$ but is NOT USED.
+Where $f$ is where there is failiure.
+
+## Resilience
+$$U_r = \int_{0}^{\varepsilon_y}\sigma d \varepsilon$$
+Where $U_r$ is the modulus of resilience and $y$ is the point of yielding.
+When a linear stress-strain curve is assumed:
+$$U_r \approx \frac{1}{2}\sigma_y \varepsilon_y = \frac{(\sigma_y)^2}{2E}$$
+
+## True Stress/Strain
+$$\sigma_T = \frac{F}{A_i}$$
+$$\varepsilon_T=\ln(\frac{l_i}{l_o})$$
+
+#### Assuming same volume (Before necking)
+$$\sigma_T = \sigma(1+\varepsilon)$$
+$$\varepsilon_T = \ln(1+\varepsilon)$$
