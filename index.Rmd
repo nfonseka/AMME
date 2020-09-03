@@ -1,5 +1,5 @@
 ---
-title: "AMME Formula/Data Guide"
+title: "AMME Formula Guide"
 author: "Nidula Foneka"
 date: "03/09/2020"
 output:
