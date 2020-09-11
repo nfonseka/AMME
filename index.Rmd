@@ -3,10 +3,6 @@ title: "AMME Formula Guide"
 author: "Nidula Foneka"
 date: "03/09/2020"
 output:
-  word_document:
-    toc: yes
-  pdf_document:
-    toc: yes
   html_document:
     number_sections: yes
     self_contained: yes
@@ -15,6 +11,10 @@ output:
     toc: yes
     toc_float: yes
     code_folding: hide
+  pdf_document:
+    toc: yes
+  word_document:
+    toc: yes
 ---
 # Stress
 ## Tensile Stress
@@ -28,7 +28,7 @@ In Pa or $N/m^2$ where $F_s$ is the Force applied parallel to the plane of $A$
 # Strain
 ## Tensile Strain
 
-$$\varepsilon = \frac{\delta}{L_o}$$
+$$\varepsilon = \frac{\Delta L}{L_o}$$
 where $\delta$ is the change in Length and $L_o$ is the Original Length
 
 ## Lateral Strain
